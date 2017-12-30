@@ -28,31 +28,31 @@ resolvers += "Flyway" at "https://flywaydb.org/repo"</pre>
         </thead>
         <tbody>
         <tr>
-            <td><a href="/migrate.html">flywayMigrate</a></td>
+            <td><a href="migrate.html">flywayMigrate</a></td>
             <td>Migrates the database</td>
         </tr>
         <tr>
-            <td><a href="/clean.html">flywayClean</a></td>
+            <td><a href="clean.html">flywayClean</a></td>
             <td>Drops all objects in the configured schemas</td>
         </tr>
         <tr>
-            <td><a href="/info.html">flywayInfo</a></td>
+            <td><a href="info.html">flywayInfo</a></td>
             <td>Prints the details and status information about all the migrations</td>
         </tr>
         <tr>
-            <td><a href="/validate.html">flywayValidate</a></td>
+            <td><a href="validate.html">flywayValidate</a></td>
             <td>Validates the applied migrations against the ones available on the classpath</td>
         </tr>
         <tr>
-            <td><a href="/baseline.html">flywayBaseline</a></td>
+            <td><a href="baseline.html">flywayBaseline</a></td>
             <td>Baselines an existing database, excluding all migrations up to and including baselineVersion</td>
         </tr>
         <tr>
-            <td><a href="/repair.html">flywayRepair</a></td>
+            <td><a href="repair.html">flywayRepair</a></td>
             <td>Repairs the metadata table</td>
         </tr>
         <tr>
-            <td><a href="/info.html">flywayInfo</a></td>
+            <td><a href="info.html">flywayInfo</a></td>
             <td>Prints information about the migration</td>
         </tr>
         </tbody>
@@ -99,6 +99,6 @@ lazy val app = (project in file("app")).
   settings(inConfig(CustomConfig)(FlywayPlugin.flywayBaseSettings(CustomConfig) ++ customSettings): _*)</pre>
 
     <p class="next-steps">
-        <a class="btn btn-primary" href="/migrate.html">SBT: migrate <i class="fa fa-arrow-right"></i></a>
+        <a class="btn btn-primary" href="migrate.html">SBT: migrate <i class="fa fa-arrow-right"></i></a>
     </p>
 </div>
