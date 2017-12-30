@@ -1,3 +1,1 @@
-exclude: [.gitattributes, .gitignore, README.md]
 flywayVersion: 5.0.3
-theme: jekyll-theme-slate

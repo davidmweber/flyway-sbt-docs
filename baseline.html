@@ -8,8 +8,6 @@ subtitle: 'sbt flywayBaseline'
 
     <p>Baselines an existing database, excluding all migrations up to and including baselineVersion.</p>
 
-    <a href="/documentation/command/baseline"><img src="/assets/balsamiq/command-baseline.png" alt="baseline"></a>
-
     <h2>Usage</h2>
     <pre class="console"><span>&gt;</span> sbt flywayBaseline</pre>
 
@@ -108,7 +106,7 @@ flywayUser := "SA"
 flywayPassword := "mySecretPwd"
 
 flywaySchemas := Seq("schema1", "schema2", "schema3")
-      
+
 flywayTable := "schema_history"
 
 flywayCallbacks := Seq("com.mycompany.CustomCallback", "com.mycompany.AnotherCallback")
@@ -125,6 +123,6 @@ flywayBaselineDescription := "Let's go!"</pre>
 [info] Schema baselined with version: 1</pre>
 
     <p class="next-steps">
-        <a class="btn btn-primary" href="/documentation/sbt/repair">SBT: repair <i class="fa fa-arrow-right"></i></a>
+        <a class="btn btn-primary" href="/repair.html">SBT: repair <i class="fa fa-arrow-right"></i></a>
     </p>
 </div>
