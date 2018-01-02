@@ -5,6 +5,8 @@ subtitle: SBT Plugin
 ---
 <div id="sbtPlugin">
     <h1>SBT Plugin</h1>
+    This is the official <a href="https://https://flywaydb.org/">Flyway database migration</a>
+    plugin for Scala's sbt.
 
     <h2>Supported SBT Versions</h2>
 
@@ -13,8 +15,10 @@ subtitle: SBT Plugin
     </ul>
 
     <h2>Installation</h2>
-
+    Add the following line to your plugins.sbt file:
     <pre class="prettyprint">addSbtPlugin("org.flywaydb" % "flyway-sbt" % "{{ site.flywayVersion }}")
+
+      
 
 resolvers += "Flyway" at "https://flywaydb.org/repo"</pre>
 
