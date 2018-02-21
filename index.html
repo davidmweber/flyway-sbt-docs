@@ -81,7 +81,7 @@ flywayPlaceholders := Map(
     <h3>Custom Configurations</h3>
     <p>The <code>flywayBaseSettings</code> value of the Flyway plugin provides base configuration and task definitions for the plugin.  This can be reused in custom configurations other than the those provided for the runtime and test configurations, if projects require it.  These settings may be reused as follows:</p>
 
-    <pre class="prettyprint">import org.flywaydb.sbt.FlywayPlugin
+    <pre class="prettyprint">enablePlugins(FlywayPlugin)
 
 lazy val CustomConfig = config("custom") describedAs "A custom config." extend Runtime
 
