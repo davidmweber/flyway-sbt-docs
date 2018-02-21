@@ -61,14 +61,12 @@ subtitle: SBT Plugin
     <p>The Flyway SBT plugin can be configured in the following ways:</p>
 
     <h3>Directly in build.sbt</h3>
-    <pre class="prettyprint">flywayUrl := "jdbc:hsqldb:file:target/flyway_sample;shutdown=true"
-
+    <pre class="prettyprint">enablePlugins(FlywayPlugin)
+    
+flywayUrl := "jdbc:hsqldb:file:target/flyway_sample;shutdown=true"
 flywayUser := "SA"
-
 flywayLocations += "org.flywaydb.sample.migration"
-
 flywaySchemas := Seq("schema1", "schema2", "schema3")
-
 flywayPlaceholders := Map(
     "keyABC" -> "valueXYZ",
     "otherplaceholder" -> "value123"
